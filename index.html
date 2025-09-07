@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Mannat's Tutorials</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(120deg, #f7e9fc 0%, #e0ecfc 100%);
+      color: #222;
+    }
+    header {
+      background: #7127ba;
+      color: #fff;
+      padding: 40px 0 20px 0;
+      text-align: center;
+      border-radius: 0 0 40px 40px;
+      box-shadow: 0 2px 12px #7127ba22;
+    }
+    .logo {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 2.8rem;
+      letter-spacing: 0.03em;
+    }
+    .tagline {
+      margin: 16px 0 0 0;
+      font-size: 1.24rem;
+      color: #ececec;
+      font-style: italic;
+      letter-spacing: 0.02em;
+    }
+    main {
+      max-width: 900px;
+      margin: 30px auto 0 auto;
+      background: #fff;
+      border-radius: 24px;
+      padding: 36px 32px;
+      box-shadow: 0 4px 24px #c9a9e733;
+    }
+    h2 {
+      color: #6d34a8;
+      margin-bottom: 10px;
+    }
+    .details-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 36px;
+      margin-top: 15px;
+      margin-bottom: 32px;
+    }
+    .details-grid > div {
+      flex: 1 1 230px;
+      background: #efedfb;
+      padding: 22px 18px;
+      border-radius: 16px;
+      min-width: 220px;
+      text-align: center;
+      box-shadow: 0 2px 8px #d9d4e177;
+    }
+    .highlight {
+      font-size: 1.12rem;
+      color: #7429c6;
+      font-weight: bold;
+    }
+    .price {
+      font-size: 1.18rem;
+      color: #1ae68d;
+      font-weight: bold;
+      margin-top: 5px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    .contact {
+      background: #e9dafd;
+      border-radius: 16px;
+      padding: 25px 22px;
+      text-align: left;
+      box-shadow: 0 1px 4px #d2c3e866;
+    }
+    .contact h3 { margin-top: 0; }
+    .contact-info {
+      margin-bottom: 12px;
+    }
+    .contact-info span {
+      font-weight: bold;
+      color: #7127ba;
+    }
+    .contact-form input, .contact-form textarea {
+      display: block;
+      width: 97%;
+      padding: 9px;
+      margin-bottom: 12px;
+      border: 1px solid #d8c6eb;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-family: inherit;
+      background: #fff;
+    }
+    .contact-form button {
+      background: #7127ba;
+      color: #fff;
+      padding: 10px 40px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.07rem;
+      cursor: pointer;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      transition: background 0.22s;
+    }
+    .contact-form button:hover {
+      background: #5252e3;
+    }
+    @media (max-width: 700px) {
+      main { padding: 18px 5vw; }
+      .details-grid { flex-direction: column; gap: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Mannat's Tutorials</div>
+    <div class="tagline">Empowering Young Minds for Tomorrow — Learning Excellence</div>
+  </header>
+
+  <main>
+    <section>
+      <h2>About Us</h2>
+      <p>
+        Welcome to <strong>Mannat's Tutorials</strong> — the perfect destination for students of all ages seeking to excel in all subjects and <span class="highlight">Mathematics</span> and <span class="highlight">Science</span>. With experienced faculty and a passion for teaching, we guide students from <span class="highlight">Standard 1 to 10</span> through carefully crafted lessons and personal attention.
+      </p>
+    </section>
+
+    <section>
+      <div class="details-grid">
+        <div>
+          <h3>Classes Offered</h3>
+          <div class="highlight">Std 1 to Std 10</div>
+        </div>
+        <div>
+          <h3>Specialization</h3>
+          <div class="highlight">Maths &amp; Science</div>
+        </div>
+        <div>
+          <h3>Timings</h3>
+          Morning: <span class="highlight">9:00 – 11:00 am</span><br>
+          Afternoon: <span class="highlight">3:00 – 7:00 pm</span>
+        </div>
+        <div>
+          <h3>Price Range</h3>
+          <div class="price">₹2000 – ₹5000 / month</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h3>Contact Us</h3>
+      <div class="contact-info">
+        <span>Phone:</span> +91-9819711201 <br>
+        <span>Email:</span> sharmariya2244@gmail.com<br>
+        <span>Address:</span>1602,Raj shivganga society,in the lane of bldg no. 56 & 57,near Bhoomi Mart, Bhabrekar nagar,Kandivali west,Mumbai 400067
+      </div>
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Your Name*" required>
+        <input type="email" name="email" placeholder="Your Email*" required>
+        <textarea name="message" rows="3" placeholder="Your Message"></textarea>
+        <button type="submit" onclick="alert('Please share this information's screenshot with the given number or email.); return false;">Send Message</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
